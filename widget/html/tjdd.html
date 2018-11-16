@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+		<title>提交订单</title>
+		<!-- Bootstrap -->
+		<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="../css/fonts/iconfont.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/swiper.min.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/style.min.css"/>
+	</head>
+	<body onselectstart="return false;" unselectable="on" style="-moz-user-select:none;">
+		<div class="header">
+			<div class="header-left">
+				<a href="javascript:history.back(-1);"><i class="iconfont icon-xiangzuo"></i></a>
+			</div>
+			<span class="header-center">提交订单</span>
+			<a class="header-right" href="javascript:;">
+				<!--<i class="iconfont icon-xinxi"></i>-->
+			</a>
+		</div>
+		<div class="index-box">
+			<div class="tjdd">
+				<div class="tjdd-add">
+					<div class="add-left">
+						<p class="le-top">王小明  <span class="phone">1455364969</span></p>
+						<p class="le-fot"><i class="iconfont icon-dizhi"></i>北京海淀区三环到四环之间学院路东里33号楼1门202</p>
+					</div>
+					<div class="add-right">
+						<a href="address.html"><i class="iconfont icon-xiangyou"></i></a>
+					</div>
+				</div>
+				<div class="line-box"></div>
+				<!--提交订单详情-->
+				<div class="tjdd-xq">
+					<div class="tjdd-box b-b ">
+						<div class="tjdd-../image/">
+							<../image/ src="../image//sp/dianfanbao.jpg"/>
+						</div>
+						<div class="tjdd-con">
+							<div class="xq-top">美的电饭煲锅家用多功能正品全自动智能4-6-8人5L升大容量50175L大容量 24小时预约 聚能釜</div>
+							<div class="xq-con">
+								<p class="xqcon-li">销量：<span>1191</span></p>
+								<p class="xqcon-li">评分: <span>10分</span></p>
+								<p class="xqcon-li">单价: <span class="color1">¥500</span></p>
+							</div>
+						</div>
+					</div>
+					<!--公共-->
+					<a class="tjdd-gg">
+						<div class="tjdd-left">积分：<span class="fr">13245</span></div>
+						<span class="tjdd-tag"><i class="iconfont icon-xiangyou"></i></span>
+					</a>
+					<a class="tjdd-gg">
+						<div class="tjdd-left">运费：<span class="fr">包邮</span></div>
+						<span class="tjdd-tag"><i class="iconfont icon-xiangyou"></i></span>
+					</a>
+				</div>
+				<div class="line-box"></div>
+				<!--留言-->
+				<div class="tjdd-fot">
+					<textarea class="tjdd-ly" name="" value="" rows="5" cols="" placeholder="给商家留言：(最多200字)"></textarea>
+				</div>
+			</div>	
+		</div>
+		<!--公共底部-->
+		<div class="footer2">
+			<div class="footer-flap"></div>
+			<div class="foot2-r">
+				<div class="fotcon">
+					合计：<span class="color1">¥0.00</span>
+				</div>
+			</div>
+			<a href="pay.html" class="foot2-l">立即购买</a>
+		</div>
+		<script src="../script/jquery-3.3.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../script/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../script/clamp.min.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			var titles = $(".tjdd .tjdd-xq .tjdd-con .xq-top");
+				for (var i = 0; i < titles.length; i++){
+		    		$clamp(titles[i],{clamp:2});
+			}
+		</script>
+	</body>
+</html>
