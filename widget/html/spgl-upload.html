@@ -63,11 +63,11 @@
 	                        <label for="">店铺门头</label>
 	                        <div class="input-box">
 	                        	<ul>
-	                        		<li class="../image/box">
-	                        			<../image/ src="../image//carnone.png" class="../image/s" id="../image/Show_WU_FILE_0"/>
+	                        		<li class="imgbox">
+	                        			<img src="../image/carnone.png" class="imgs" id="imgShow_WU_FILE_0"/>
 		                            	<div class="div1" >
 										    <div class="div2">点击上传</div>
-										    <input type="file" class="file_input"  id="up_../image/_WU_FILE_0">
+										    <input type="file" class="file_input"  id="up_img_WU_FILE_0">
 										</div>
 	                        		</li>
 	                        	</ul>
@@ -77,11 +77,11 @@
 	                        <label for="">店铺门头</label>
 	                        <div class="input-box">
 	                        	<ul>
-	                        		<li class="../image/box">
-	                        			<../image/ src="../image//xifeng.png" class="../image/s" id="../image/Show_WU_FILE_1"/>
+	                        		<li class="imgbox">
+	                        			<img src="../image/xifeng.png" class="imgs" id="imgShow_WU_FILE_1"/>
 		                            	<div class="div1" >
 										    <div class="div2">点击上传</div>
-										    <input type="file" class="file_input"  id="up_../image/_WU_FILE_1">
+										    <input type="file" class="file_input"  id="up_img_WU_FILE_1">
 										</div>
 	                        		</li>
 	                        	</ul>
@@ -105,7 +105,7 @@
 		</div>
 		<!--公共底部-->
 		<div class="footer">
-			<a href="index.html" class="foot-list">
+			<a href="../index.html" class="foot-list">
 				<i class="iconfont icon-shouye1"></i>
 				<span>首页</span>
 			</a>
@@ -126,7 +126,7 @@
 		<!--模态框-->
 		<div class="BLACKCOVER"></div>
 		<div class="bigShow">
-		    <../image/ src="" alt="" />
+		    <img src="" alt="" />
 		    <span class="close">×</span>
 		</div>
 		<script src="../script/jquery-3.3.1.min.js" type="text/javascript" charset="utf-8"></script>
@@ -136,9 +136,9 @@
 			$(document).ready(function() {
 			    var $BLACKCOVER = $(".BLACKCOVER");
 			    var $bigShow = $(".bigShow");
-			    var $big../image/ = $(".bigShow ../image/");
+			    var $bigImg = $(".bigShow img");
 			
-			    $(".../image/s").click(function() {
+			    $(".imgs").click(function() {
 			
 			
 			        //让大黑布展示：
@@ -146,7 +146,7 @@
 			        //让大图显示
 			        $bigShow.show();
 			        var aaa = $(this).attr('src');
-			        $big../image/.attr("src", aaa);
+			        $bigImg.attr("src", aaa);
 			    });
 			
 			    //关闭业务
