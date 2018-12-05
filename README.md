@@ -1,4 +1,4 @@
-﻿#appshop 0.0.2 2018-12-05 zzf
+﻿#appshop 0.0.2 2018-12-05 zzf 
 添加wap .web .wachat 三个目录，保持目录完整性
 
 #appshop 0.0.1 2018-12-05 dr
